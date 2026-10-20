@@ -32,13 +32,13 @@ int main()
    srand(time(0));
 
    // create a loadbalancer
-   loadbalance lb;
+   loadbalancer lb;
    
    // start off with a "full" queue
    for (int i = 0; i < 10; i++)
    {
       request r = (createRandomRequest());
-      ib.addRequest(r);
+      lb.addRequest(r);
    }
    
    // an array of webservers, each given an initial request to process
