@@ -30,7 +30,7 @@ request loadbalancer::getRequest()
       requestQueue.pop();
       return r;
    }
-
+   
    // ignore warning here about no return value
 }
 
